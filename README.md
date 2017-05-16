@@ -32,6 +32,14 @@ $ curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash –
 $ sudo apt-get install -y nodejs
 ```
 
+설치 확인
+
+```
+$ azure help
+```
+
+![screenshot](resources/azureclitest.png)
+
 
 ## 1. HDInsight 클러스터 만들기
 ## 2. 분석 데이터 업로드
