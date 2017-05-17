@@ -79,8 +79,34 @@ $ azure storage account keys list -g <Resource Group Name> <Storage Account Name
 
 ![screenshot](resources/key_list.png)
 
+### HDInsight 클러스터 생성
+
+- [참고][3]
+
+```
+$ azure hdinsight cluster create \
+-g <Resource Group Name> \
+-l <Location> \
+-y <클러스터 유형> \
+--clusterType Spark \
+--defaultStorageAccountName <Storage Account Name>.blob.core.windows.net \
+--defaultStorageAccountKey <Storage Account Key> \
+--defaultStorageContainer <Storage Account Name> \
+--workerNodeCount 2 \
+--userName <Admin Name> \
+--password <Admin Password> \
+--sshUserName <SSH User Name> \
+--sshPassword <SSH User Password> <Cluster Name>
+```
+
+- 클러스터 유형 : Hadoop, HBase, Storm, Spark (여기서는 Spark)
+- Admin Name, Admin Password : Dash Board, Ambari 로그인에 사용됨
+- SSH User Name, SSH User Password : 클러스터의 Head Node 로그인에 사용됨
 
 ## 분석 데이터 업로드
+
+
+
 ## 3. Jupyter Notebook을 이용하여 Python 코딩하기
 ## 4. Python Script를 Spark 클러스터에 submit 하기
 ### 4-1. Python code 수정
@@ -94,3 +120,4 @@ $ azure storage account keys list -g <Resource Group Name> <Storage Account Name
 
 [1]: https://msdn.microsoft.com/commandline/wsl/install_guide
 [2]: https://github.com/Azure/azure-content-kokr/blob/master/articles/xplat-cli-install.md
+[3]: https://docs.microsoft.com/ko-kr/azure/hdinsight/hdinsight-hadoop-create-linux-clusters-azure-cli
