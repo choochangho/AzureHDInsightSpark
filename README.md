@@ -118,7 +118,15 @@ $ azure hdinsight cluster create \
 | click     | 정수 | 1 ~ n |
 
 
-## 3. Jupyter Notebook을 이용하여 Python 코딩하기
+## Jupyter Notebook을 이용하여 Python 코딩하기
+
+### HDInsight Jupyter Notebook 접속
+
+![screenshot](resources/azure_portal.png)
+![screenshot](resources/ambari-jupyter-icon.png)
+![screenshot](resources/jupyter-main.png)
+
+
 ## 4. Python Script를 Spark 클러스터에 submit 하기
 ### 4-1. Python code 수정
 ## 5. Automation
