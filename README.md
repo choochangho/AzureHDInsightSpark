@@ -123,7 +123,9 @@ $ azure hdinsight cluster create \
 ### HDInsight Jupyter Notebook 접속
 
 ![screenshot](resources/azure_portal.png)
+
 ![screenshot](resources/ambari-jupyter-icon.png)
+
 ![screenshot](resources/jupyter-main.png)
 
 
