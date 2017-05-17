@@ -40,8 +40,39 @@ $ azure help
 
 ![screenshot](resources/azureclitest.png)
 
+## Azure Login
 
-## 1. HDInsight 클러스터 만들기
+```
+$ azure login
+```
+
+
+## HDInsight 클러스터 만들기
+### 저장소 계정 만들기
+
+```
+$ azure storage account create -g <Resource Group Name> --sku-name RAGRS -l <Location> --kind Storage <Storage Account Name>
+```
+
+Location 목록 보기
+
+```
+$ azure location list
+```
+
+### 1-2. 저장소 계정 액세스를 위한 키 검색
+
+HDInsight 에서 사용하는 데이터를 저장하기 위해 위에서 생성한 저장소 접근 키가 필요하다.
+
+```
+$ azure storage account keys list -g <Resource Group Name> <Storage Account Name>
+```
+
+반환된 데이터에서 key1의 값을 저장해둔다.
+
+![screenshot](resources/key_list.png)
+
+
 ## 2. 분석 데이터 업로드
 ## 3. Jupyter Notebook을 이용하여 Python 코딩하기
 ## 4. Python Script를 Spark 클러스터에 submit 하기
