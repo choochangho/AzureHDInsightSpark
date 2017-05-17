@@ -105,6 +105,17 @@ $ azure hdinsight cluster create \
 
 ## 분석 데이터 업로드
 
+- [Azure Storage Explorer 설치][4]
+
+![screenshot](resources/StorageExplorer.png)
+
+데이터 형태(CSV, 구분자:,)
+
+| 컬럼      | 형태 | 값    |
+|-----------|------|-------|
+| userId    | 정수 | 1 ~ n |
+| productId | 정수 | 1 ~ n |
+| click     | 정수 | 1 ~ n |
 
 
 ## 3. Jupyter Notebook을 이용하여 Python 코딩하기
@@ -121,3 +132,4 @@ $ azure hdinsight cluster create \
 [1]: https://msdn.microsoft.com/commandline/wsl/install_guide
 [2]: https://github.com/Azure/azure-content-kokr/blob/master/articles/xplat-cli-install.md
 [3]: https://docs.microsoft.com/ko-kr/azure/hdinsight/hdinsight-hadoop-create-linux-clusters-azure-cli
+[4]: http://storageexplorer.com/
