@@ -80,7 +80,7 @@ $ azure storage account keys list -g <Resource Group Name> <Storage Account Name
 ![screenshot](resources/key_list.png)
 
 
-## 2. 분석 데이터 업로드
+## 분석 데이터 업로드
 ## 3. Jupyter Notebook을 이용하여 Python 코딩하기
 ## 4. Python Script를 Spark 클러스터에 submit 하기
 ### 4-1. Python code 수정
